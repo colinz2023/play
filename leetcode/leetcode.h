@@ -5,9 +5,10 @@
 #ifndef PROJECT_LEETCODE_H
 #define PROJECT_LEETCODE_H
 
+#include <set>
+#include <string>
 #include <vector>
 #include <unordered_map>
-#include <set>
 #include <algorithm>
 #include <iostream>
 
