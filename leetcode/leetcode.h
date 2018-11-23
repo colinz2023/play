@@ -15,3 +15,11 @@
 using namespace std;
 
 #endif //PROJECT_LEETCODE_H
+
+template <typename T>
+inline void PrintVector(vector<T> v) {
+    for (auto c : v) {
+        cout << c << " ";
+    }
+    cout << endl;
+}
