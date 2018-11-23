@@ -16,14 +16,13 @@ int main() {
 
     int *array = GetRandomNumArray(N, 10, N + 99999);
 
-    int *array2 = CopyArray(array, N);
-
     PrintArrary(array, 10);
 
     //SortTestRun<int>(InsertionSort<int>, array, N, "插入排序");
 
-    TestSort(InsertionSort, array, N, "插入排序");
-    TestSort(InsertionSort2, array2, N, "插入排序2");
+    TestSort(InsertionSort, CopyArray(array, N), N, "插入排序");
+    TestSort(InsertionSort2, CopyArray(array, N), N, "插入排序2");
+    TestSort(QuickSort, CopyArray(array, N), N, "快速排序");
 
     //PrintArrary(array, 10);
 }

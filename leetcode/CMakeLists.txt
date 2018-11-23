@@ -13,3 +13,5 @@ add_executable(009_ 009/palindrone_number.cpp)
 #013
 add_executable(013_ 013/roman_to_integer.cpp)
 
+#014
+add_executable(014_ 014/longest_common_prefix.cpp)
