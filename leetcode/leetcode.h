@@ -11,6 +11,7 @@
 #include <unordered_map>
 #include <algorithm>
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
@@ -22,4 +23,5 @@ inline void PrintVector(vector<T> v) {
         cout << c << " ";
     }
     cout << endl;
+    //copy(v.begin(), v.end(), ostream_iterator<T>(cout, " "));
 }

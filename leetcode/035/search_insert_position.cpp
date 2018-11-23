@@ -50,7 +50,7 @@ public:
 int main() {
     vector<int> t1 = {1,3,5,6};
     vector<int> t2 = {1,3};
-
+    
     cout << Solution().searchInsert(t1, 5) << endl;
     cout << Solution().searchInsert(t1, 2) << endl;
     cout << Solution().searchInsert(t1, 7) << endl;

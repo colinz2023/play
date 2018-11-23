@@ -28,7 +28,8 @@ add_executable(035_ 035/search_insert_position.cpp)
 #069
 add_executable(069_ 069/sqrt.cpp)
 
-
+#278
+add_executable(278_ 278/first_bad_version.cpp)
 
 #867
 add_executable(867_ 867/transpose_matrix.cpp)
