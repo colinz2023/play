@@ -16,8 +16,6 @@ add_executable(0009_ 009/palindrone_number.cpp)
 #014
 add_executable(0014_ 014/longest_common_prefix.cpp)
 
-#021
-add_executable(0021_ 021/merge_two_sorted_list.cpp)
 
 #067
 add_executable(0067_ 067/add_binary.cpp)
@@ -39,3 +37,4 @@ add_subdirectory(array)
 add_subdirectory(matrix)
 add_subdirectory(dynamic_programming)
 add_subdirectory(math)
+add_subdirectory(link_list)
