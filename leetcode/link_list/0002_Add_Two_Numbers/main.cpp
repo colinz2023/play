@@ -29,11 +29,36 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        return nullptr;
+        int v1, v2;
+        int carry = 0;
+        ListNode* head = new ListNode(0);
+        ListNode* curr = head;
+
+        while (l1 || l2) {
+            v1 = l1 == nullptr ? 0 : l1->val;
+            v2 = l2 == nullptr ? 0 : l2->val;
+            int sum = v1 + v2 + carry;
+            carry = sum / 10;
+            curr->next = new ListNode(sum % 10);;
+            curr = curr->next;
+            if (l1) l1 = l1->next;
+            if (l2) l2 = l2->next;
+        }
+        if (carry) {
+            curr->next = new ListNode(1);
+        }
+        return head->next;
     }
 };
 
 int main() {
+
+    ListNode* l1 = ListNode::MakeList({2, 4, 3, 1});
+    ListNode* l2 = ListNode::MakeList({5, 6, 4});
+
+    ListNode* l3 = Solution().addTwoNumbers(l1, l2);
+
+    ListNode::PrintList(l3);
 
     return 0;
 }

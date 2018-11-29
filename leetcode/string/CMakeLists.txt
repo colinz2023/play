@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 set(CMAKE_CXX_STANDARD 11)
 
+#0003
+add_executable(0003 0003_Longest_Substring_Without_Repeating_Characters/main.cpp)
+
 #008
 add_executable(0008_ atoi.cpp)
 
