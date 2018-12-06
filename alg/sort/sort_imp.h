@@ -61,8 +61,10 @@ void _QuickSort(T arr[], size_t l, size_t r) {
         return;
 
     size_t p = _QuickSortPartition(arr, l, r);
-    _QuickSort(arr, l, p - 1);
+    if (p != 0)
+        _QuickSort(arr, l, p - 1);
     _QuickSort(arr, p + 1, r);
+
 }
 
 template<typename T>

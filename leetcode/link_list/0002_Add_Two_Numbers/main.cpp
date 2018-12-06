@@ -39,7 +39,7 @@ public:
             v2 = l2 == nullptr ? 0 : l2->val;
             int sum = v1 + v2 + carry;
             carry = sum / 10;
-            curr->next = new ListNode(sum % 10);;
+            curr->next = new ListNode(sum % 10);
             curr = curr->next;
             if (l1) l1 = l1->next;
             if (l2) l2 = l2->next;

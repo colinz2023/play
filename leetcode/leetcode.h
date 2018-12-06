@@ -8,8 +8,11 @@
 #include <set>
 #include <string>
 #include <vector>
+#include <queue>
 #include <unordered_map>
+#include <unordered_set>
 #include <algorithm>
+#include <functional>
 #include <iostream>
 #include <sstream>
 #include <cassert>

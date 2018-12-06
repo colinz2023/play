@@ -38,11 +38,12 @@ int main() {
 
     //SortTestRun<int>(InsertionSort<int>, array, N, "插入排序");
 
-    TestSort(InsertionSort, CopyArray(array, N), N, "插入排序");
-    TestSort(InsertionSort2, CopyArray(array, N), N, "插入排序2");
+    //TestSort(InsertionSort, CopyArray(array, N), N, "插入排序");
+    //TestSort(InsertionSort2, CopyArray(array, N), N, "插入排序2");
     TestSort(QuickSort, CopyArray(array, N), N, "快速排序");
+    //TestSort(QuickSort, array, N, "快速排序");
 
-    //PrintArrary(array, 10);
+    PrintArrary(array, 100);
 
 //    std::vector<int> tv = {1, 2, 3, 19, 190, 1233, 1514};
 //    std::cout << BinarySearch(tv, 190) << std::endl;
