@@ -7,3 +7,6 @@ add_executable(0021 merge_two_sorted_list.cpp)
 
 #83
 add_executable(83 0083_Remove_Duplicates_from_Sorted_List/main.cpp)
+
+#141
+add_executable(141 0141_Linked_List_Cycle/main.cpp)

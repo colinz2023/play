@@ -35,3 +35,5 @@ add_subdirectory(math)
 add_subdirectory(link_list)
 add_subdirectory(set&map)
 add_subdirectory(dynamic_programming)
+
+add_subdirectory(design)
