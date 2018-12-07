@@ -17,6 +17,9 @@ add_executable(0088_ 0088_Merge_Sorted_Array/main.cpp)
 #0167 array, double pointer
 add_executable(0167_ 0167_Two_Sum_II/main.cpp)
 
+#0169
+add_executable(169 0169_Majority_Element/main.cpp)
+
 #0215 array, quit sort
 add_executable(0215_ 0215_Kth_Largest_Element_in_an_Array/main.cpp)
 
