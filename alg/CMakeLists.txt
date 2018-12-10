@@ -9,3 +9,4 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/build)
 
 include_directories(z_include)
 add_subdirectory(sort)
+add_subdirectory(common)
