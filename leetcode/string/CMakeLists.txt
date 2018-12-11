@@ -45,3 +45,6 @@ add_executable(0520_ 0520_Detect_Capital/main.cpp)
 
 #0767
 add_executable(0767 0767_Reorganize_String/main.cpp)
+
+#796
+add_executable(796 0796_Rotate_String/main.cpp)
