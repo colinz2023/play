@@ -11,6 +11,9 @@ add_executable(24 0024_Swap_Nodes_in_Pairs/main.cpp)
 #83
 add_executable(83 0083_Remove_Duplicates_from_Sorted_List/main.cpp)
 
+#92
+add_executable(92 0092_Reverse_Linked_List_II/main.cpp)
+
 #141
 add_executable(141 0141_Linked_List_Cycle/main.cpp)
 
