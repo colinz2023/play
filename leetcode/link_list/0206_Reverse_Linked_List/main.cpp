@@ -16,11 +16,10 @@
 class Solution {
 public:
 
-
     ListNode* reverseList1(ListNode* head) {
-
         ListNode* pre = NULL;
         ListNode* cur = head;
+
         while (cur != NULL) {
             ListNode* next = cur->next;
             cur->next = pre;
@@ -32,7 +31,6 @@ public:
 
 
     ListNode* reverseList(ListNode* head) {
-
         ListNode* pre = head;
         ListNode* curr = NULL;
 
@@ -50,12 +48,27 @@ public:
         return pre;
     }
 
+    //递归方式，从新链表的头开始
+    ListNode* reverseList3(ListNode* head) {
+
+        if (head == NULL || head->next == NULL)
+            return head;
+
+        ListNode* rhead = reverseList(head->next);
+
+        head->next->next = head;
+        head->next = NULL;
+
+        return rhead;
+    }
+
 
 };
 
 int main() {
-
     ListNode* l1 = ListNode::MakeList({1, 2, 3, 4, 5, 6, 7, 8});
-    ListNode* l2 = Solution().reverseList(l1);
-    ListNode::PrintList(l2);
+    ListNode* l2 = ListNode::MakeList({1, 2, 3, 4, 5, 6, 7, 8});
+
+    ListNode::PrintList(Solution().reverseList1(l1));
+    ListNode::PrintList(Solution().reverseList(l2));
 }
