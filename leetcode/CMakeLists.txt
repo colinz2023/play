@@ -36,6 +36,7 @@ add_subdirectory(matrix)
 add_subdirectory(math)
 add_subdirectory(link_list)
 add_subdirectory(set&map)
+add_subdirectory(stack&queue)
 add_subdirectory(dynamic_programming)
 add_subdirectory(usefull)
 

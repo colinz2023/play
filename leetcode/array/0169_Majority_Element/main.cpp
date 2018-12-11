@@ -40,6 +40,7 @@ public:
 
 
     //// Boyer-Moore Voting Algorithm
+    //// Paper: http://www.cs.rug.nl/~wim/pub/whh348.pdf
     int majorityElement3(vector<int> &nums) {
         assert(nums.size() > 0);
 
