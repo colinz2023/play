@@ -28,6 +28,7 @@ struct ListNode {
     }
 
     static void PrintList(ListNode* l) {
+        assert(l != nullptr);
         while (l) {
             std::cout << l->val << " ";
             l = l->next;
