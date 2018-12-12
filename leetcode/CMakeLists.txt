@@ -16,6 +16,9 @@ add_executable(0009_ _bynum/009/palindrone_number.cpp)
 #014
 add_executable(0014_ _bynum/014/longest_common_prefix.cpp)
 
+#022
+add_executable(22_ _bynum/22/Generate_Parentheses.cpp)
+
 #067
 add_executable(0067_ _bynum/067/add_binary.cpp)
 
@@ -30,6 +33,7 @@ add_executable(0278_ _bynum/278/first_bad_version.cpp)
 
 add_subdirectory(bits)
 add_subdirectory(backtracking)
+add_subdirectory(binary_tree)
 add_subdirectory(string)
 add_subdirectory(array)
 add_subdirectory(matrix)

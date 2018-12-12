@@ -48,3 +48,6 @@ add_executable(0767 0767_Reorganize_String/main.cpp)
 
 #796
 add_executable(796 0796_Rotate_String/main.cpp)
+
+#929
+add_executable(929 0929_Unique_Email_Addresses/main.cpp)
