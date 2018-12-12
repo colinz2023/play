@@ -23,6 +23,11 @@ public:
     int numSquares(int n) {
 
     }
+
+    //BFS广度优先遍历，最短路径
+    int numSquares2(int n) {
+
+    }
 };
 
 int main() {
