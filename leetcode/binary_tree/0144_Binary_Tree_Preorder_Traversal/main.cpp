@@ -20,7 +20,7 @@ public:
         return res;
     }
 
-    //栈
+    //并不好，👎
     vector<int> preorderTraversal2(TreeNode* root) {
         vector<int> res;
         stack<TreeNode*> st;
@@ -36,6 +36,29 @@ public:
                 st.push(node->right);
             if (node->left)
                 st.push(node->left);
+        }
+        return res;
+    }
+
+    //👌，😄
+    vector<int> preorderTraversal3(TreeNode* root) {
+        vector<int> res;
+        if (root == NULL)
+            return res;
+
+        stack<TreeNode*> stack;
+        TreeNode* cur = root;
+
+        while (cur != NULL || !stack.empty()) {
+            if (cur != NULL){
+                res.push_back(cur->val);
+                stack.push(cur);
+                cur = cur->left;
+            } else {
+                cur = stack.top();
+                stack.pop();
+                cur = cur->right;
+            }
         }
         return res;
     }
