@@ -15,7 +15,7 @@
 
 class Solution {
 public:
-    //中序遍历，从小到大排列
+    //中序遍历，从小到大排列, 左<根<右
     bool isValidBST(TreeNode* root) {
         vector<int> v;
         inorderVisit(root, v);
@@ -33,6 +33,24 @@ public:
             v.push_back(root->val);
             inorderVisit(root->right, v);
         }
+    }
+
+    //使用栈
+    bool isValidBST2(TreeNode* root) {
+        stack<TreeNode*> s;
+        TreeNode *p = root, *pre = NULL;
+        while (p || !s.empty()) {
+            while (p) {
+                s.push(p);
+                p = p->left;
+            }
+            TreeNode *t = s.top();
+            s.pop();
+            if (pre && t->val <= pre->val) return false;
+            pre = t;
+            p = t->right;
+        }
+        return true;
     }
 };
 
