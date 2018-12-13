@@ -7,6 +7,9 @@ include_directories("..")
 #94
 add_executable(94 0094_Binary_Tree_Inorder_Traversal/main.cpp binary_tree.cpp)
 
+#98
+add_executable(98 0098_Validate_Binary_Search_Tree/main.cpp binary_tree.cpp)
+
 #102
 add_executable(102 0102_Binary_Tree_Level_Order_Traversal/main.cpp binary_tree.cpp)
 
