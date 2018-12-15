@@ -43,11 +43,23 @@ add_executable(0459 0459_Repeated_Substring_Pattern/main.cpp)
 #0520
 add_executable(0520_ 0520_Detect_Capital/main.cpp)
 
+#541
+add_executable(541 0541_Reverse_String_II/main.cpp)
+
+#551
+add_executable(551 0551_Student_Attendance_Record_I/main.cpp)
+
+#696
+add_executable(696 0696_Count_Binary_Substrings/main.cpp)
+
 #0767
 add_executable(0767 0767_Reorganize_String/main.cpp)
 
 #796
 add_executable(796 0796_Rotate_String/main.cpp)
+
+#819
+add_executable(819 0819_Most_Common_Word/main.cpp)
 
 #929
 add_executable(929 0929_Unique_Email_Addresses/main.cpp)

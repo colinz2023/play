@@ -21,7 +21,10 @@ struct TreeNode {
  };
 
 TreeNode* stringToTreeNode(std::string input);
+std::string treeNodeToString(TreeNode* root);
 std::string integerVectorToString(std::vector<int> list, int length = -1);
+
+
 
 
 #endif //PROJECT_BINARY_TREE_H

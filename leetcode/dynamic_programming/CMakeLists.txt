@@ -20,7 +20,11 @@ add_executable(121 0121_Best_Time_to_Buy_and_Sell_Stock/main.cpp)
 #122
 add_executable(122 0122_Best_Time_to_Buy_and_Sell_Stock_II/main.cpp)
 
-
 #343
 add_executable(343 0343_Integer_Break/main.cpp)
+
+#552
+add_executable(552 0552_Student_Attendance_Record_II/main.cpp)
+
+
 

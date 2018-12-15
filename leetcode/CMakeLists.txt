@@ -31,7 +31,7 @@ add_executable(0112_ _bynum/112/path_sum.cpp)
 #278
 add_executable(0278_ _bynum/278/first_bad_version.cpp)
 
-add_subdirectory(bits)
+add_subdirectory(number)
 add_subdirectory(backtracking)
 add_subdirectory(binary_tree)
 add_subdirectory(string)

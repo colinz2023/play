@@ -65,6 +65,30 @@ TreeNode* stringToTreeNode(string input) {
     return root;
 }
 
+string treeNodeToString(TreeNode* root) {
+    if (root == nullptr) {
+        return "[]";
+    }
+
+    string output = "";
+    queue<TreeNode*> q;
+    q.push(root);
+    while(!q.empty()) {
+        TreeNode* node = q.front();
+        q.pop();
+
+        if (node == nullptr) {
+            output += "null, ";
+            continue;
+        }
+
+        output += to_string(node->val) + ", ";
+        q.push(node->left);
+        q.push(node->right);
+    }
+    return "[" + output.substr(0, output.length() - 2) + "]";
+}
+
 string integerVectorToString(vector<int> list, int length) {
     if (length == -1) {
         length = list.size();

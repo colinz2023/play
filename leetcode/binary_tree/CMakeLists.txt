@@ -20,4 +20,5 @@ add_executable(144 0144_Binary_Tree_Preorder_Traversal/main.cpp binary_tree.cpp)
 #145
 add_executable(145 0145_Binary_Tree_Postorder_Traversal/main.cpp binary_tree.cpp)
 
-
+#226
+add_executable(226 0226_Invert_Binary_Tree/main.cpp binary_tree.cpp)
