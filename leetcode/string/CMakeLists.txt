@@ -49,6 +49,9 @@ add_executable(541 0541_Reverse_String_II/main.cpp)
 #551
 add_executable(551 0551_Student_Attendance_Record_I/main.cpp)
 
+#557
+add_executable(557 0557_Reverse_Words_in_a_String_III/main.cpp)
+
 #696
 add_executable(696 0696_Count_Binary_Substrings/main.cpp)
 
