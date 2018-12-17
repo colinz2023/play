@@ -37,7 +37,7 @@ public:
     vector<vector<int>> combine(int n, int k) {
         vector<vector<int>> res;
         vector<int> one;
-        if (n == 0 || k == 0 || n < k) {
+        if (n <= 0 || k <= 0 || n < k) {
             return res;
         }
 
