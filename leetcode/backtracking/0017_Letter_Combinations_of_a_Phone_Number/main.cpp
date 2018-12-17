@@ -15,8 +15,6 @@
 
 #include "leetcode.h"
 
-
-
 class Solution {
 private:
      const string digit_char[10] = {" ", "*", "abc", "def"

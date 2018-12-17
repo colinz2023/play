@@ -14,14 +14,31 @@
 //    "()()()"
 //]
 
+//REF
+//http://www.cnblogs.com/grandyang/p/4444160.html
+
 #include "leetcode.h"
 
 class Solution {
 
 public:
-    vector<string> generateParenthesis(int n) {
 
+    void generateParenthesisDFS(int left, int right, string s, vector<string>& res) {
+        if (left > right) return;
+        if (left == 0 && right == 0) {
+            res.push_back(s);
+        } else {
+            if (left)
+                generateParenthesisDFS(left - 1, right, s + "(", res);
+            if (right)
+                generateParenthesisDFS(left, right - 1, s + ")", res);
+        }
+    }
+
+    vector<string> generateParenthesis(int n) {
         vector<string> res;
+        if (n < 1) return res;
+        generateParenthesisDFS(n, n, "", res);
         return res;
     }
 };
