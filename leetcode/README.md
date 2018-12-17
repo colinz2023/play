@@ -10,6 +10,7 @@
 |39|[组合总和](https://leetcode-cn.com/problems/combination-sum/)|[C++](./backtracking/0039_Combination_Sum/main.cpp)|回溯，组合|
 |46|[全排列](https://leetcode-cn.com/problems/permutations/)|[C++](./backtracking/0046_Permutations/main.cpp)|回溯，排列|
 |77|[组合](https://leetcode-cn.com/problems/combinations/)|[C++](./backtracking/0077_Combinations/main.cpp)|回溯，组合|
+|93|[复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/)|[C++](./backtracking/0093_Restore_IP_Addresses/main.cpp)|回溯，字符串|
 |98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree)|[C++](./binary_tree/0098_Validate_Binary_Search_Tree/main.cpp)| 中序遍历，二叉搜索树|
 |102|[二叉树层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)|[C++](./binary_tree/0102_Binary_Tree_Level_Order_Traversal/main.cpp)| BFS，Queue，二叉树|
 |208|[实现Trie(前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|[C++](./design/0208_Implement_Trie/main.cpp)|Trie|
