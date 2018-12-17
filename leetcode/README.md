@@ -12,6 +12,7 @@
 |98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree)|[C++](./binary_tree/0098_Validate_Binary_Search_Tree/main.cpp)| 中序遍历，二叉搜索树|
 |102|[二叉树层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)|[C++](./binary_tree/0102_Binary_Tree_Level_Order_Traversal/main.cpp)| BFS，Queue，二叉树|
 |208|[实现Trie(前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|[C++](./design/0208_Implement_Trie/main.cpp)|Trie|
+|279|[完全平方数](https://leetcode-cn.com/problems/perfect-squares/)|[C++](./dynamic_programming/0279_Perfect_Squares/main.cpp)|DP，BFS|
 |283|[移动零](https://leetcode-cn.com/problems/move-zeroes/)|[C++](./array/0283_Move_Zeroes/main.cpp)|数组，双指针|
 |347|[前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements)|[C++](./stack&queue/0347_Top_K_Frequent_Elements/main.cpp)|优先队列，桶排序|
 |394|[字符串解码](https://leetcode-cn.com/problems/decode-string/)|[C++](./string/0394_Decode_String/main.cpp)|字符串，栈，DFS|

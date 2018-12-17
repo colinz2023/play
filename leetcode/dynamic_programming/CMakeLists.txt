@@ -20,6 +20,9 @@ add_executable(121 0121_Best_Time_to_Buy_and_Sell_Stock/main.cpp)
 #122
 add_executable(122 0122_Best_Time_to_Buy_and_Sell_Stock_II/main.cpp)
 
+#279
+add_executable(279 0279_Perfect_Squares/main.cpp)
+
 #343
 add_executable(343 0343_Integer_Break/main.cpp)
 
