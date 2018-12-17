@@ -81,6 +81,22 @@ private:
     bool is10(int byte) {
         return (byte & 0b10000000) && !(byte & 0b01000000);
     }
+
+    bool is10x(int byte) {
+        string s = get_binary_str(byte);
+        return s[0] == '1' && s[1] == '0';
+    }
+
+    string get_binary_str(int data) {
+        string str;
+        for (int i = 0; i < 8; i++) {
+            if (n & 0x01) str.insert(0, "1");
+            else str.insert(0, "0");
+            n = n >> 1;
+        }
+        return str;
+    }
+
 };
 
 
