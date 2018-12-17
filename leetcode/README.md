@@ -7,6 +7,7 @@
 |17|[电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)|[C++](./backtracking/0017_Letter_Combinations_of_a_Phone_Number/main.cpp)|回溯，字符串|
 |20|[有效的括号](https://leetcode-cn.com/problems/valid-parentheses)|[C++](./stack&queue/0020_Valid_Parentheses/main.cpp)|栈|
 |22|[括号生成](https://leetcode-cn.com/problems/generate-parentheses)|[C++](./backtracking/0022_Generate_Parentheses/main.cpp)| 回溯，字符串|
+|39|[组合总和](https://leetcode-cn.com/problems/combination-sum/)|[C++](./backtracking/0039_Combination_Sum/main.cpp)|回溯，组合|
 |46|[全排列](https://leetcode-cn.com/problems/permutations/)|[C++](./backtracking/0046_Permutations/main.cpp)|回溯，排列|
 |77|[组合](https://leetcode-cn.com/problems/combinations/)|[C++](./backtracking/0077_Combinations/main.cpp)|回溯，组合|
 |98|[验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree)|[C++](./binary_tree/0098_Validate_Binary_Search_Tree/main.cpp)| 中序遍历，二叉搜索树|
