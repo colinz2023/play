@@ -31,7 +31,7 @@ private:
             return;
         }
         for (int step = 1; step <= 3; step++) {
-            if (12 - ip.size() * 3 < s.size() - index) {
+            if (3 * (4 - ip.size())  < s.size() - index) {
                 cout << "😂😂😂😂" << endl;
                 break;
             }
