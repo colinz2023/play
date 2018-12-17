@@ -14,6 +14,7 @@
 |208|[实现Trie(前缀树)](https://leetcode-cn.com/problems/implement-trie-prefix-tree/)|[C++](./design/0208_Implement_Trie/main.cpp)|Trie|
 |283|[移动零](https://leetcode-cn.com/problems/move-zeroes/)|[C++](./array/0283_Move_Zeroes/main.cpp)|数组，双指针|
 |347|[前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements)|[C++](./stack&queue/0347_Top_K_Frequent_Elements/main.cpp)|优先队列，桶排序|
+|394|[字符串解码](https://leetcode-cn.com/problems/decode-string/)|[C++](./string/0394_Decode_String/main.cpp)|字符串，栈，DFS|
 |541|[反转转字符串II](https://leetcode-cn.com/problems/reverse-string-ii/)|[C++](./string/0541_Reverse_String_II/main.cpp)|字符串，反转|
 |551|[学生出勤记录I](https://leetcode-cn.com/problems/student-attendance-record-i/)|[C++](./string/0551_Student_Attendance_Record_I/main.cpp)|字符串|
 |696|[计数二进制子串](https://leetcode-cn.com/problems/count-binary-substrings/)|[C++](./string/0696_Count_Binary_Substrings/main.cpp)|字符串，计数，😄|

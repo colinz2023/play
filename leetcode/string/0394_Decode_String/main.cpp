@@ -20,13 +20,83 @@
 
 class Solution {
 public:
+    //双栈push/pop同步
+    //👌 ？
     string decodeString(string s) {
+        string res;
+        stack<int> num;
+        stack<string> str;
+        str.push("");
 
+        for (int i = 0, b = 0; i < s.size();) {
+            if (isdigit(s[i])) {
+                b = i;
+                while (isdigit(s[++i]));
+                int n = stoi(s.substr(b, i - b));
+                num.push(n);
+                str.push("");
+            } else if (isalpha(s[i])) {
+                str.top() += s[i++];
+            } else if (s[i] == ']') {
+                int cnt = num.top(); num.pop();
+                string s = str.top(); str.pop();
+                while (cnt--) {
+                    str.top() += s;
+                }
+                i++;
+            } else {
+                i++;
+            }
+        }
+        return str.top();
+    }
+};
+
+class Solution2 {
+public:
+    string decodeString(string s) {
+        int end;
+        return dfs(s, 0, end);
+    }
+
+private:
+    //s = "3[a]2[bc]", 返回 "aaabcbc".
+    //s = "3[a2[c]]", 返回 "accaccacc".
+    //s = "2[abc]3[cd]ef", 返回 "abcabccdcdcdef".
+    //👌？,
+    //🐱啊
+    string dfs(string s, int start, int& end) {
+        string res = "";
+        for (int i = start, b = 0; i < s.size();) {
+            if (isdigit(s[i])) {
+                int e, n;
+                for (b = i; isdigit(s[i]); i++);
+                n = stoi(s.substr(b, i - b));
+                string sub = dfs(s, i, e);
+                //cout << "sub = " << sub << endl;
+                while (n--) res += sub;
+                i = e;
+            } else if (isalpha(s[i])) {
+                res += s[i++];
+            } else if (s[i] == ']') {
+                i++;
+                end = i;
+                return res;
+            } else {
+                i++;
+            }
+        }
+        return res;
     }
 };
 
 int main() {
-    cout << Solution().decodeString("3[a]2[bc]") << endl;
+    cout << Solution().decodeString("3[ax]2[bc]") << endl;
+    cout << Solution2().decodeString("3[ax]2[bc]") << endl;
+
     cout << Solution().decodeString("3[a2[c]]") << endl;
+    cout << Solution2().decodeString("3[a2[c]]") << endl;
+
     cout << Solution().decodeString("2[abc]3[cd]ef") << endl;
+    cout << Solution2().decodeString("2[abc]3[cd]ef") << endl;
 }
